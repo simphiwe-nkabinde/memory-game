@@ -5,6 +5,21 @@
 // Follow me on Codepen
 
 (function () {
+    function onLocationChanged(lat, lon) {
+        console.log('location:', lat, lon);
+    }
+
+    function getMsisdn() {
+        var msisdn = Ayoba.getMsisdn();
+        console.log('msisdn:', msisdn);
+    }
+    function getSelfJid() {
+        var selfJid = getURLParameter("jid")
+        console.log('selfJid:', selfJid);
+    }
+    function onNicknameChanged(nickname) {
+        console.log('nickname:', nickname)
+    }
 
     var USER_SCORE = 0
 
@@ -50,7 +65,7 @@
             this.paused = false;
             this.guess = null;
             this.binding();
-            
+
             USER_SCORE = 2000
             scoreInterval = setInterval(() => {
                 USER_SCORE = USER_SCORE - 1
@@ -86,18 +101,21 @@
                 }
                 if ($(".matched").length == $(".card").length) {
                     _.win();
-                    clearInterval(scoreInterval)
-                    postGameScore(USER_SCORE)
                 }
             }
         },
 
         win: function () {
             this.paused = true;
+            clearInterval(scoreInterval)
+            postGameScore(USER_SCORE)
             setTimeout(function () {
                 Memory.showModal();
                 Memory.$game.fadeOut();
             }, 1000);
+            getSelfJid()
+            getMsisdn()
+
         },
 
         showModal: function () {
