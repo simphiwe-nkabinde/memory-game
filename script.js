@@ -5,7 +5,7 @@
 // Follow me on Codepen
 
 (function () {
-    console.log('country:', getCountry());
+    // console.log('country:', getCountry());
     console.log('msisdn:', getMsisdn());
     console.log('selfJid:', getSelfJid());
     console.log('nickname:', getNickname())

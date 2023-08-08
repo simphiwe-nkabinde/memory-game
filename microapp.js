@@ -51,10 +51,10 @@ function getSelfJid() {
 }
 
 // LOCATION
-function getCountry() {
-    let countryCode = Ayoba.getCountry();
-    return countryCode
-}
+// function getCountry() {
+//     let countryCode = Ayoba.getCountry();
+//     return countryCode
+// }
 
 function closeApp() {
     try {
