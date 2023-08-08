@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Memory game</h1>
+        <div class="game"></div>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <h2 class="winner">Your Score!</h2>
+                <button class="restart">Play Again?</button>
+                <button>
+                    <a href="scoreboard.html">scoreboard</a>
+                </button>
+            </div>
+        </div>
+        <footer>
+            Score: <sapn id="scoreDisplay"></sapn>
+        </footer>
+    </div><!-- End Wrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
