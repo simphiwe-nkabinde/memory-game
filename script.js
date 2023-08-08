@@ -5,21 +5,10 @@
 // Follow me on Codepen
 
 (function () {
-    function onLocationChanged(lat, lon) {
-        console.log('location:', lat, lon);
-    }
-
-    function getMsisdn() {
-        var msisdn = Ayoba.getMsisdn();
-        console.log('msisdn:', msisdn);
-    }
-    function getSelfJid() {
-        var selfJid = getURLParameter("jid")
-        console.log('selfJid:', selfJid);
-    }
-    function onNicknameChanged(nickname) {
-        console.log('nickname:', nickname)
-    }
+    console.log('country:', getCountry());
+    console.log('msisdn:', getMsisdn());
+    console.log('selfJid:', getSelfJid());
+    console.log('nickname:', getNickname())
 
     var USER_SCORE = 0
 

@@ -70,3 +70,9 @@ function onNicknameChanged(nickname) {
 function onAvatarChanged(avatar) {
     USER_AVATAR = avatar
 }
+function getNickname() {
+    return USER_NAME
+}
+function getAvatar() {
+    return USER_AVATAR
+}
