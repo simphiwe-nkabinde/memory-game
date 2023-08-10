@@ -14,7 +14,7 @@
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "authentication": `Bearer ${token}`
+                // "authentication": `Bearer ${token}`
             },
             body: JSON.stringify({
                 data: {
