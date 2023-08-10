@@ -64,7 +64,7 @@
                     clearInterval(scoreInterval)
                 }
             }, 30)
-            postGameScore(787)
+            // postGameScore(787)
         },
 
         binding: function () {
