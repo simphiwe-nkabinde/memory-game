@@ -14,16 +14,16 @@
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                Authentication: `Bearer ${token}`
+                "authentication": `Bearer ${token}`
             },
             body: JSON.stringify({
                 data: {
                     jid: "memgamefc5c7c6bb30BHIASBFJBADS59537d2d2df@dev.ayoba.me",
-                    playerNickname: "Memory Game Player",
+                    playerNickname: "MemGame Test Player",
                     gameId: "fc862c07-3f24-4064-96b5-01290cd865af",
                     country: "south africa",
-                    playerName: '003',
-                    "timeInSeconds": 354.67,
+                    playerName: '016',
+                    "timeInSeconds": 35487,
                     score: score
                 }
             })
@@ -64,6 +64,7 @@
                     clearInterval(scoreInterval)
                 }
             }, 30)
+            postGameScore(787)
         },
 
         binding: function () {
