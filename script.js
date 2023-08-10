@@ -22,8 +22,8 @@
                     playerNickname: "MemGame Test Player",
                     gameId: "fc862c07-3f24-4064-96b5-01290cd865af",
                     country: "south africa",
-                    playerName: '016',
-                    "timeInSeconds": 35487,
+                    playerNumber: '016',
+                    timeInSeconds: 35487,
                     score: score
                 }
             })
