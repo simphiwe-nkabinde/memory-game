@@ -25,8 +25,7 @@
                     playerName: '003',
                     "timeInSeconds": 354.67,
                     score: score
-                },
-                head
+                }
             })
 
         })
