@@ -7,19 +7,26 @@
 (function () {
     var USER_SCORE = 0
 
+    var token = "d8e4e8cccc9da2788e888d738516b460cc20007347041a4e948e6b131ff6ef87d3822432d8a963b7f955d84768aff79ad1d91dbeda3dbf8ef0e0165a40ddf6aef30a440070c08df677a04e1b517304a84169a98e5b1b2b52e2930b8090b6f16155b224e7d3138dca033cb434a35e062f4857f001b2e05a4dc1a2ae3c97faa4b7"
+
     function postGameScore(score) {
         fetch('http://localhost:1337/api/player-scores', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
+                headers: {Authentication: `Bearer ${token}`}
             },
             body: JSON.stringify({
                 data: {
-                    jid: "bdfffc5c7c6bb30BHIASBFJBADS59537d2d2df@dev.ayoba.me",
-                    nickname: "Memory Game Player",
-                    game: "55c7b601-7854-444d-839a-c92de2c5d01d",
+                    jid: "memgamefc5c7c6bb30BHIASBFJBADS59537d2d2df@dev.ayoba.me",
+                    playerNickname: "Memory Game Player",
+                    gameId: "fc862c07-3f24-4064-96b5-01290cd865af",
+                    country: "south africa",
+                    playerName: '003',
+                    "timeInSeconds": 354.67,
                     score: score
-                }
+                },
+                head
             })
 
         })
