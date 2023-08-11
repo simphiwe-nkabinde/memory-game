@@ -14,7 +14,7 @@
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                // "authentication": `Bearer ${token}`
+                "Authorization": `bearer ${token}`
             },
             body: JSON.stringify({
                 data: {
@@ -24,7 +24,8 @@
                     country: "south africa",
                     playerNumber: '016',
                     timeInSeconds: 35487,
-                    score: score
+                    score: score,
+                    msisdn: '+2330968754'
                 }
             })
 
